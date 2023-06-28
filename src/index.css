@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a4365;
+}
+
+.move{
+    animation: movepoint 2s infinite;
+}
+
+@keyframes movepoint{
+    0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -20px);}
+    100% {transform: translate(0px, 0px);}
+}
